@@ -10,10 +10,7 @@ const AuthFlow = () => {
   const {SIGN_IN, SIGN_UP} = routes;
 
   return (
-    <AuthFlowStack.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}>
+    <AuthFlowStack.Navigator>
       <AuthFlowStack.Screen name={SIGN_IN} component={SignInScreen} />
       <AuthFlowStack.Screen name={SIGN_UP} component={SignUpScreen} />
     </AuthFlowStack.Navigator>

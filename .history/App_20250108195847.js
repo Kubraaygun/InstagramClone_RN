@@ -1,15 +1,14 @@
 //import liraries
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import RootNavigator from './src/routes/RootNavigator';
+import RootNavigatior from './src/routes/RootNavigatior';
 
 // create a component
 const App = () => {
   return (
-    <SafeAreaView style={styles.flex}>
+    <SafeAreaView>
       <NavigationContainer>
-        <RootNavigator />
+        <RootNavigatior />
       </NavigationContainer>
     </SafeAreaView>
   );
@@ -19,8 +18,4 @@ const App = () => {
 export default App;
 
 // define your styles
-const styles = StyleSheet.create({
-  flex: {
-    flex: 1,
-  },
-});
+const styles = StyleSheet.create({});

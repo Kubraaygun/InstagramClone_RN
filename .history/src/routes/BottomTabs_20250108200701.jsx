@@ -12,10 +12,7 @@ const BottomTabs = () => {
   const {HOME_FLOW, SEARCH_FLOW, MARKET_FLOW, REELS_FLOW, PROFILE_FLOW} =
     routes;
   return (
-    <BottomTabsNavigator.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}>
+    <BottomTabsNavigator.Navigator>
       <BottomTabsNavigator.Screen name={HOME_FLOW} component={HomeFlow} />
       <BottomTabsNavigator.Screen name={SEARCH_FLOW} component={SearchScreen} />
       <BottomTabsNavigator.Screen name={REELS_FLOW} component={ReelsScreen} />
