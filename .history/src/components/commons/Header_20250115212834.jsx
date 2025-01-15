@@ -7,7 +7,6 @@ import {
   IGLogo,
   Messages,
 } from '../../assets/icons';
-import Badge from './Badge';
 const Header = () => {
   return (
     <View style={styles.header}>
@@ -17,7 +16,6 @@ const Header = () => {
       </View>
       <View style={styles.rightBox}>
         <Heart />
-        <Badge value={'10+'} />
         <Messages />
         <AddFeeds />
       </View>
@@ -32,7 +30,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 13,
-    paddingVertical: 5,
+    paddingVertical: 3,
   },
   leftBox: {
     flexDirection: 'row',

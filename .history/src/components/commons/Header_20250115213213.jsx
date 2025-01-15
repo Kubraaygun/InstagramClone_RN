@@ -17,7 +17,7 @@ const Header = () => {
       </View>
       <View style={styles.rightBox}>
         <Heart />
-        <Badge value={'10+'} />
+        <Badge />
         <Messages />
         <AddFeeds />
       </View>
