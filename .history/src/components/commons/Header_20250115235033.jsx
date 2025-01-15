@@ -36,10 +36,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 13,
     paddingVertical: 5,
+    alignItems: 'center',
   },
   leftBox: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     gap: 8,
   },
   rightBox: {

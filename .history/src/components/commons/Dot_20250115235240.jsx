@@ -10,8 +10,8 @@ export default Dot;
 
 const styles = StyleSheet.create({
   box: {
-    width: 10,
-    height: 10,
+    width: 12,
+    height: 12,
     backgroundColor: colors.RED,
     borderRadius: 99,
     bordderWidth: 2,

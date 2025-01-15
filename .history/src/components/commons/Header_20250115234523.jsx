@@ -39,18 +39,12 @@ const styles = StyleSheet.create({
   },
   leftBox: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     gap: 8,
   },
   rightBox: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 24,
-  },
-  badge: {
-    position: 'absolute',
-    left: 66,
-    top: -3,
-    zIndex: 1000,
   },
 });

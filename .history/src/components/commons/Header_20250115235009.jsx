@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
   },
   leftBox: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
+    justifyContent: 'center',
     gap: 8,
   },
   rightBox: {

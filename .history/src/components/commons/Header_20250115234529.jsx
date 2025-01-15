@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   leftBox: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     gap: 8,
   },
   rightBox: {
@@ -47,10 +47,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 24,
   },
-  badge: {
+  customStyle={{
     position: 'absolute',
     left: 66,
     top: -3,
     zIndex: 1000,
-  },
+  }}
 });
