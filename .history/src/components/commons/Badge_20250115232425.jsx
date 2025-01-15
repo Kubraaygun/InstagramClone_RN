@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {colors} from '../../constants/colors';
+import {color} from '../../constants/colors';
 import Title from './Title';
 import normalize from '../../utils/responsiveFunction';
 
@@ -17,7 +17,7 @@ export default Badge;
 const styles = StyleSheet.create({
   badge: {
     paddingHorizontal: normalize(4),
-    backgroundColor: colors.RED,
+    backgroundColor: color.RED,
     borderRadius: normalize(10),
   },
 });

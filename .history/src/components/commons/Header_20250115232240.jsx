@@ -8,7 +8,6 @@ import {
   Messages,
 } from '../../assets/icons';
 import Badge from './Badge';
-import Dot from './Dot';
 const Header = () => {
   return (
     <View style={styles.header}>
@@ -18,18 +17,14 @@ const Header = () => {
       </View>
       <View style={styles.rightBox}>
         <Heart />
-        <Dot />
-        <Messages />
         <Badge
-          customStyle={{
+          style={{
             position: 'absolute',
-            left: 66,
-            top: -3,
-            zIndex: 1000,
+            left: 0,
           }}
-          value={'10'}
+          value={'10+'}
         />
-
+        <Messages />
         <AddFeeds />
       </View>
     </View>
@@ -40,6 +35,7 @@ export default Header;
 
 const styles = StyleSheet.create({
   header: {
+    position: 'absolute',
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 13,

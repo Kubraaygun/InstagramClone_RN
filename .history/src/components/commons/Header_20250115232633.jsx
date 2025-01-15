@@ -25,7 +25,6 @@ const Header = () => {
             position: 'absolute',
             left: 66,
             top: -3,
-            zIndex: 1000,
           }}
           value={'10'}
         />

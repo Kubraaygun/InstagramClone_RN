@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {colors} from '../../constants/colors';
+import {color, colors} from '../../constants/colors';
 import Title from './Title';
 import normalize from '../../utils/responsiveFunction';
 
