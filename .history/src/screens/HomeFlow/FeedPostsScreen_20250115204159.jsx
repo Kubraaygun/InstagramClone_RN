@@ -1,5 +1,5 @@
 import {View, Text} from 'react-native';
-import Header from '../../components/commons/Header';
+import {Header} from 'react-native/Libraries/NewAppScreen';
 
 const FeedPostsScreen = () => {
   return (

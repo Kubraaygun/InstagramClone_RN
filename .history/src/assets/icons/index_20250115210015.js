@@ -1,0 +1,1 @@
+export {IGLogo} from './IGLogo';
