@@ -7,13 +7,21 @@ export const source =
 const Avatar = () => {
   return (
     <View style={styles.avatar}>
+      <View></View>
       <StoryRing />
-      <Image
-        style={styles.image}
-        source={{
-          uri: source,
-        }}
-      />
+      <View style={{width: 75, height: 75, borderRadius: 94329}}>
+        <Image
+          style={{
+            width: 75,
+            height: 75,
+            borderRadius: 94329,
+            position: 'absolute',
+          }}
+          source={{
+            uri: source,
+          }}
+        />
+      </View>
     </View>
   );
 };
@@ -24,11 +32,5 @@ const styles = StyleSheet.create({
   avatar: {
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  image: {
-    width: 75,
-    height: 75,
-    borderRadius: 9999,
-    position: 'absolute',
   },
 });

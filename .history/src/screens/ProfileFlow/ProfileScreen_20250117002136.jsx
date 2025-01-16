@@ -12,7 +12,7 @@ const ProfileScreen = () => {
     <View>
       <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
       <View>
-        <Avatar image={source} />
+        <Avatar />
       </View>
     </View>
   );

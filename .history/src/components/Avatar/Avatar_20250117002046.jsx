@@ -8,12 +8,14 @@ const Avatar = () => {
   return (
     <View style={styles.avatar}>
       <StoryRing />
-      <Image
-        style={styles.image}
-        source={{
-          uri: source,
-        }}
-      />
+      <View style={{width: 75, height: 75, borderRadius: 94329}}>
+        <Image
+          style={styles.image}
+          source={{
+            uri: source,
+          }}
+        />
+      </View>
     </View>
   );
 };

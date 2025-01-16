@@ -8,6 +8,7 @@ const Avatar = () => {
   return (
     <View style={styles.avatar}>
       <StoryRing />
+
       <Image
         style={styles.image}
         source={{
