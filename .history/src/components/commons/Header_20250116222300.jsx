@@ -7,58 +7,43 @@ import {
   Heart,
   IGLogo,
   Messages,
-  VerifiedBadge,
 } from '../../assets/icons';
 import Badge from './Badge';
 import Dot from './Dot';
 import {routes} from '../../constants/routes';
-import Title, {titleTypes} from './Title';
+import Title from './Title';
 
 const Header = ({screenName, isMyProfile}) => {
   const {FEED_POSTS_SCREEN} = routes;
   return (
     <View style={styles.header}>
-      {/* Eğer Feeds Sayfası açıksa */}
+      {/* Eger Feeds Sayfasi aciksa */}
       {screenName === FEED_POSTS_SCREEN ? (
         <View style={styles.leftBox}>
           <IGLogo />
           <ChevronDown />
         </View>
-      ) : // Feeds sayfası değilse ve kendi profil sayfamdaysam
+      ) : // Feeds sayfasi degilse ve kendim profil sayfamdaysam girecek kosul
       isMyProfile ? (
         <View>
           <Text>Kendi Profil Sayfam</Text>
         </View>
       ) : (
-        // Başkasının profil sayfasındaysam
+        //Baskasinn profil sayfasindaysam girecek kosul
         <ChevronLeft />
       )}
 
-      {screenName == routes.PROFILE_SCREEN && (
-        <View style={styles.middleBox}>
-          <Title text={'username'} theme={titleTypes.TEXT_16_700} />
-          <VerifiedBadge />
-        </View>
-      )}
+      <View>
+        <Title text={'username'} theme="TEXT_16_700" />
+      </View>
+      <View style={styles.rightBox}>
+        <Heart />
+        <Dot />
+        <Messages />
+        <Badge customStyle={styles.badge} value={'10'} />
 
-      {screenName === FEED_POSTS_SCREEN ? (
-        <View style={styles.rightBox}>
-          <Heart />
-          <Dot />
-          <Messages />
-          <Badge customStyle={styles.badge} value={'10'} />
-
-          <AddFeeds />
-        </View>
-      ) : isMyProfile ? (
-        <View>
-          <Text>Kendim</Text>
-        </View>
-      ) : (
-        <View>
-          <Text>Baskasi</Text>
-        </View>
-      )}
+        <AddFeeds />
+      </View>
     </View>
   );
 };
@@ -76,11 +61,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     gap: 8,
-  },
-  middleBox: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
   },
   rightBox: {
     flexDirection: 'row',

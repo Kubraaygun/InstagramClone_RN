@@ -18,47 +18,34 @@ const Header = ({screenName, isMyProfile}) => {
   const {FEED_POSTS_SCREEN} = routes;
   return (
     <View style={styles.header}>
-      {/* Eğer Feeds Sayfası açıksa */}
+      {/* Eger Feeds Sayfasi aciksa */}
       {screenName === FEED_POSTS_SCREEN ? (
         <View style={styles.leftBox}>
           <IGLogo />
           <ChevronDown />
         </View>
-      ) : // Feeds sayfası değilse ve kendi profil sayfamdaysam
+      ) : // Feeds sayfasi degilse ve kendim profil sayfamdaysam girecek kosul
       isMyProfile ? (
-        <View>
+        <View style={styles.middleBox}>
           <Text>Kendi Profil Sayfam</Text>
         </View>
       ) : (
-        // Başkasının profil sayfasındaysam
+        //Baskasinn profil sayfasindaysam girecek kosul
         <ChevronLeft />
       )}
 
-      {screenName == routes.PROFILE_SCREEN && (
-        <View style={styles.middleBox}>
-          <Title text={'username'} theme={titleTypes.TEXT_16_700} />
-          <VerifiedBadge />
-        </View>
-      )}
+      <View>
+        <Title text={'username'} theme={titleTypes.TEXT_16_700} />
+        <VerifiedBadge />
+      </View>
+      <View style={styles.rightBox}>
+        <Heart />
+        <Dot />
+        <Messages />
+        <Badge customStyle={styles.badge} value={'10'} />
 
-      {screenName === FEED_POSTS_SCREEN ? (
-        <View style={styles.rightBox}>
-          <Heart />
-          <Dot />
-          <Messages />
-          <Badge customStyle={styles.badge} value={'10'} />
-
-          <AddFeeds />
-        </View>
-      ) : isMyProfile ? (
-        <View>
-          <Text>Kendim</Text>
-        </View>
-      ) : (
-        <View>
-          <Text>Baskasi</Text>
-        </View>
-      )}
+        <AddFeeds />
+      </View>
     </View>
   );
 };

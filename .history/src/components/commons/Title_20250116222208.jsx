@@ -2,11 +2,6 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {colors} from '../../constants/colors';
 
-export const titleTypes = {
-  TEXT_12_400_18: 'TEXT_12_400_18',
-  TEXT_16_700: 'TEXT_16_700',
-};
-
 const Title = ({theme = 'TEXT_12_400_18', text}) => {
   return (
     <View>
@@ -25,9 +20,5 @@ export const styles = {
     lineHeight: 18,
   }),
 
-  TEXT_16_700: StyleSheet.create({
-    color: colors.BLACK,
-    fontSize: 16,
-    fontWeight: '700',
-  }),
+  TEXT_16_700: StyleSheet.create({}),
 };
