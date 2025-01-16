@@ -6,7 +6,7 @@ import Header from '../../components/commons/Header';
 const ProfileScreen = () => {
   return (
     <View>
-      <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
+      <Header screenName={routes.PROFILE_SCREEN} isMyProfile={false} />
       <Text>ProfileScreen</Text>
     </View>
   );

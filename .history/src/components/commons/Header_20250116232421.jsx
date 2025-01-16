@@ -21,7 +21,7 @@ const Header = ({screenName, isMyProfile}) => {
   const {FEED_POSTS_SCREEN} = routes;
   return (
     <View style={styles.header}>
-      {/* If the Feeds Page is open */}
+      {/* Eger Feeds Sayfasi aciksa */}
       {screenName === FEED_POSTS_SCREEN ? (
         <View style={styles.leftBox}>
           <IGLogo />

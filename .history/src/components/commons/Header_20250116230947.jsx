@@ -4,12 +4,10 @@ import {
   AddFeeds,
   ChevronDown,
   ChevronLeft,
-  Drawer,
   Heart,
   IGLogo,
   Messages,
   Notification,
-  Options,
   VerifiedBadge,
 } from '../../assets/icons';
 import Badge from './Badge';
@@ -21,29 +19,29 @@ const Header = ({screenName, isMyProfile}) => {
   const {FEED_POSTS_SCREEN} = routes;
   return (
     <View style={styles.header}>
-      {/* If the Feeds Page is open */}
+      {/* Eger Feeds Sayfasi aciksa */}
       {screenName === FEED_POSTS_SCREEN ? (
         <View style={styles.leftBox}>
           <IGLogo />
           <ChevronDown />
         </View>
-      ) : // If it is not a feeds page and my name is on my profile page, the condition is
+      ) : // Feeds sayfasi degilse ve kendim profil sayfamdaysam girecek kosul
       isMyProfile ? (
         <View>
           <Text>Kendi Profil Sayfam</Text>
         </View>
       ) : (
-        // Conditions to enter if I am on someone else's profile page
+        //Baskasinn profil sayfasindaysam girecek kosul
         <ChevronLeft />
       )}
-      {/* If it is a profile screen and someone else's profile is entered, the condition */}
-      {screenName == routes.PROFILE_SCREEN && isMyProfile === false && (
+
+      {screenName == routes.PROFILE_SCREEN && (
         <View style={styles.middleBox}>
           <Title text={'username'} theme={titleTypes.TEXT_16_700} />
           <VerifiedBadge />
         </View>
       )}
-      {/* If it is on the feed screen, the screen to enter is */}
+
       {screenName === FEED_POSTS_SCREEN ? (
         <View style={styles.rightBox}>
           <Heart />
@@ -53,17 +51,11 @@ const Header = ({screenName, isMyProfile}) => {
 
           <AddFeeds />
         </View>
-      ) : // If I'm on my own profile
-      isMyProfile ? (
-        <View style={styles.rightBox}>
-          <AddFeeds />
-          <Drawer />
-        </View>
+      ) : isMyProfile ? (
+        <View></View>
       ) : (
-        // If I'm on someone else's profile
-        <View style={styles.rightBox}>
+        <View>
           <Notification />
-          <Options />
         </View>
       )}
     </View>
