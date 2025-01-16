@@ -16,7 +16,7 @@ const ProfileScreen = () => {
         <Avatar image={source} />
 
         <View>
-          <ProfileData value={'1,234'} />
+          <ProfileData />
           <ProfileData />
           <ProfileData />
         </View>

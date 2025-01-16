@@ -3,7 +3,6 @@ import React from 'react';
 import {routes} from '../../constants/routes';
 import Header from '../../components/commons/Header';
 import Avatar from '../../components/Avatar/Avatar';
-import ProfileData from '../../components/ProfileFlow/ProfileData';
 
 export const source =
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOPH8IcoWp3KC21raLvC_9Xt4QC9kNusEhg&s';
@@ -15,11 +14,7 @@ const ProfileScreen = () => {
       <View>
         <Avatar image={source} />
 
-        <View>
-          <ProfileData value={'1,234'} />
-          <ProfileData />
-          <ProfileData />
-        </View>
+        <View></View>
       </View>
     </View>
   );
