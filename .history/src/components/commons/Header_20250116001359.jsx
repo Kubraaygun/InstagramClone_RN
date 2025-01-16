@@ -11,23 +11,14 @@ import Badge from './Badge';
 import Dot from './Dot';
 import {routes} from '../../constants/routes';
 const Header = ({screenName, isMyProfile}) => {
-  const {FEED_POSTS_SCREEN} = routes;
   return (
     <View style={styles.header}>
-      {screenName === FEED_POSTS_SCREEN ? (
+      {screenName === routes.FEED_POSTS_SCREEN ? (
         <View style={styles.leftBox}>
           <IGLogo />
           <ChevronDown />
         </View>
-      ) : isMyProfile ? (
-        <View>
-          <Text>Kendi Profil Sayfam</Text>
-        </View>
-      ) : (
-        <View>
-          <Text>Baskasi</Text>
-        </View>
-      )}
+      ) : null}
 
       <View style={styles.rightBox}>
         <Heart />

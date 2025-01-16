@@ -1,11 +1,9 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import FeedPostsScreen from '../screens/HomeFlow/FeedPostsScreen';
 import ProfileScreen from '../screens/ProfileFlow/ProfileScreen';
-import {routes} from '../constants/routes';
 
 const HomeFlow = () => {
   const HomeFlowStack = createNativeStackNavigator();
-  const {PROFILE_SCREEN, FEED_POSTS_SCREEN} = routes;
 
   return (
     <HomeFlowStack.Navigator
@@ -14,11 +12,11 @@ const HomeFlow = () => {
       }}
       initialRouteName="ProfileScreen">
       <HomeFlowStack.Screen
-        name={FEED_POSTS_SCREEN}
+        name="FeedPostsScreen"
         component={FeedPostsScreen}
       />
 
-      <HomeFlowStack.Screen name={PROFILE_SCREEN} component={ProfileScreen} />
+      <HomeFlowStack.Screen name="ProfileScreen" component={ProfileScreen} />
     </HomeFlowStack.Navigator>
   );
 };

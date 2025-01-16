@@ -19,7 +19,7 @@ const Header = ({screenName, isMyProfile}) => {
           <IGLogo />
           <ChevronDown />
         </View>
-      ) : isMyProfile ? (
+      ) : isMyProfil ? (
         <View>
           <Text>Kendi Profil Sayfam</Text>
         </View>

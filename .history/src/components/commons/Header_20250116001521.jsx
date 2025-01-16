@@ -19,15 +19,7 @@ const Header = ({screenName, isMyProfile}) => {
           <IGLogo />
           <ChevronDown />
         </View>
-      ) : isMyProfile ? (
-        <View>
-          <Text>Kendi Profil Sayfam</Text>
-        </View>
-      ) : (
-        <View>
-          <Text>Baskasi</Text>
-        </View>
-      )}
+      ) : null}
 
       <View style={styles.rightBox}>
         <Heart />

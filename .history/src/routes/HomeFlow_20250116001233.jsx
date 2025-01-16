@@ -1,7 +1,6 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import FeedPostsScreen from '../screens/HomeFlow/FeedPostsScreen';
 import ProfileScreen from '../screens/ProfileFlow/ProfileScreen';
-import {routes} from '../constants/routes';
 
 const HomeFlow = () => {
   const HomeFlowStack = createNativeStackNavigator();
