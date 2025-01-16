@@ -21,8 +21,6 @@ const styles = StyleSheet.create({
   badge: {
     paddingHorizontal: normalize(4),
     backgroundColor: colors.RED,
-    borderRadius: normalize(160),
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderRadius: normalize(10),
   },
 });

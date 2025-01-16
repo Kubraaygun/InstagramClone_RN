@@ -29,9 +29,9 @@ const Header = ({screenName, isMyProfile}) => {
         </View>
       ) : // If it is not a feeds page and my name is on my profile page, the condition is
       isMyProfile ? (
-        <View style={[styles.leftBox, {alignItems: 'center'}]}>
+        <View style={styles.leftBox}>
           <Title text={'My Profile'} theme={titleTypes.TEXT_22_700_40} />
-          <Badge value={12} />
+          <Badge value={10} />
         </View>
       ) : (
         // Conditions to enter if I am on someone else's profile page

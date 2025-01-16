@@ -9,7 +9,7 @@ const Badge = ({value, customStyle}) => {
     <View style={[styles.badge, customStyle]}>
       <Title
         theme={titleTypes.TEXT_12_400_18}
-        text={`${value}${value > 10 ? '+' : ''}`}
+        text={`${value} ${value > 10 ? '+' : null}`}
       />
     </View>
   );
@@ -21,8 +21,6 @@ const styles = StyleSheet.create({
   badge: {
     paddingHorizontal: normalize(4),
     backgroundColor: colors.RED,
-    borderRadius: normalize(160),
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderRadius: normalize(10),
   },
 });

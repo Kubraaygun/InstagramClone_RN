@@ -31,7 +31,7 @@ const Header = ({screenName, isMyProfile}) => {
       isMyProfile ? (
         <View style={[styles.leftBox, {alignItems: 'center'}]}>
           <Title text={'My Profile'} theme={titleTypes.TEXT_22_700_40} />
-          <Badge value={12} />
+          <Badge value={13} />
         </View>
       ) : (
         // Conditions to enter if I am on someone else's profile page

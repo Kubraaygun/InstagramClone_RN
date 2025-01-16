@@ -31,10 +31,4 @@ export const styles = {
     fontSize: 16,
     fontWeight: '700',
   }),
-  TEXT_22_700_40: StyleSheet.create({
-    color: colors.BLACK,
-    fontSize: 22,
-    fontWeight: '700',
-    lineHeight: 40,
-  }),
 };

@@ -24,5 +24,7 @@ const styles = StyleSheet.create({
     borderRadius: normalize(160),
     alignItems: 'center',
     justifyContent: 'center',
+    width: normalize(25),
+    height: normalize(25),
   },
 });

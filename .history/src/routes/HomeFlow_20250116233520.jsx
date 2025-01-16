@@ -12,7 +12,7 @@ const HomeFlow = () => {
       screenOptions={{
         headerShown: false,
       }}
-      initialRouteName={'ProfileScreen'}>
+      initialRouteName={FEED_POSTS_SCREEN}>
       <HomeFlowStack.Screen
         name={FEED_POSTS_SCREEN}
         component={FeedPostsScreen}
