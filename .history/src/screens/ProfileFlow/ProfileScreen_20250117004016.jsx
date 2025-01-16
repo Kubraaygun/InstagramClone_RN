@@ -17,8 +17,8 @@ const ProfileScreen = () => {
 
         <View>
           <ProfileData value={'1,234'} title={'Posts'} />
-          <ProfileData value={'5,678'} title={'Folloers'} />
-          <ProfileData value={'9,101'} title={'Following'} />
+          <ProfileData value={'1,234'} title={'Posts'} />
+          <ProfileData value={'1,234'} title={'Posts'} />
         </View>
       </View>
     </View>

@@ -32,11 +32,7 @@ export const styles = {
     fontSize: 14,
     fontWeight: '700',
   }),
-  TEXT_14_400: StyleSheet.create({
-    color: colors.BLACK,
-    fontSize: 14,
-    fontWeight: '400',
-  }),
+
   TEXT_16_700: StyleSheet.create({
     color: colors.BLACK,
     fontSize: 16,

@@ -1,12 +1,10 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import Title from '../commons/Title';
 
 const ProfileData = ({value, title}) => {
   return (
     <View>
-      <Title text={value} />
-      <Title text={title} />
+      <Text>ProfileData</Text>
     </View>
   );
 };

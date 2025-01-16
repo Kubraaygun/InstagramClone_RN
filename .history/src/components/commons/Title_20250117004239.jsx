@@ -3,7 +3,6 @@ import React from 'react';
 import {colors} from '../../constants/colors';
 
 export const titleTypes = {
-  TEXT_14_400: 'TEXT_14_400',
   TEXT_14_700: 'TEXT_14_700',
   TEXT_16_700: 'TEXT_16_700',
   TEXT_12_400_18: 'TEXT_12_400_18',
@@ -27,16 +26,7 @@ export const styles = {
     fontWeight: '400',
     lineHeight: 18,
   }),
-  TEXT_14_700: StyleSheet.create({
-    color: colors.BLACK,
-    fontSize: 14,
-    fontWeight: '700',
-  }),
-  TEXT_14_400: StyleSheet.create({
-    color: colors.BLACK,
-    fontSize: 14,
-    fontWeight: '400',
-  }),
+
   TEXT_16_700: StyleSheet.create({
     color: colors.BLACK,
     fontSize: 16,
