@@ -5,5 +5,4 @@ export const colors = {
   GRAY: '#EFEFEF',
   RED: '#F10135',
   NEUTRAL: '#6E6E6E',
-  DARKBLUE: '#004C8B',
 };

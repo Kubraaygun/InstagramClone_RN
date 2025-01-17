@@ -22,7 +22,7 @@ const ProfileScreen = () => {
           <ProfileData value={'9,101'} title={'Following'} />
         </View>
       </View>
-      <View style={styles.userNameAndInfo}>
+      <View>
         <Text style={styles.userName}>Username</Text>
         <Text style={styles.category}>Category/Genre Test</Text>
         <View>
@@ -69,11 +69,6 @@ const styles = StyleSheet.create({
     color: colors.DARKBLUE,
     fontSize: 13,
     fontWeight: '700',
-    lineHeight: 16,
-  },
-  userNameAndInfo: {
-    padding: 6,
-    paddingHorizontal: 12,
-    paddingBottom: 10,
+    lineHeight: 26,
   },
 });

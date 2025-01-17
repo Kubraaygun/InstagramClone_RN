@@ -71,9 +71,4 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: 16,
   },
-  userNameAndInfo: {
-    padding: 6,
-    paddingHorizontal: 12,
-    paddingBottom: 10,
-  },
 });
