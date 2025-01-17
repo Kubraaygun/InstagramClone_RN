@@ -12,7 +12,7 @@ export const source =
 
 const ProfileScreen = () => {
   return (
-    <View style={{backgroundColor: colors.WHITE, flex: 1}}>
+    <View style={{backgroundColor: colors.WHITE}}>
       <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
       <View style={styles.userProfileData}>
         <Avatar image={source} />

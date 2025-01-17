@@ -76,7 +76,7 @@ const ProfileScreen = () => {
           <View
             style={{
               flexDirection: 'row',
-              gap: 6,
+              gap:6
               justifyContent: 'space-between',
             }}>
             <CustomButton title={'Message'} theme={'outline'} />

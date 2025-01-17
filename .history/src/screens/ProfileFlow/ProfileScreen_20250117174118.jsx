@@ -5,14 +5,13 @@ import Header from '../../components/commons/Header';
 import Avatar from '../../components/Avatar/Avatar';
 import ProfileData from '../../components/ProfileFlow/ProfileData';
 import {colors} from '../../constants/colors';
-import CustomButton from '../../components/CustomButtons/CustomButton';
 
 export const source =
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOPH8IcoWp3KC21raLvC_9Xt4QC9kNusEhg&s';
 
 const ProfileScreen = () => {
   return (
-    <View style={{backgroundColor: colors.WHITE, flex: 1}}>
+    <View>
       <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
       <View style={styles.userProfileData}>
         <Avatar image={source} />
@@ -71,19 +70,6 @@ const ProfileScreen = () => {
             <Text style={styles.boldFollowed}>100 others </Text>
           </View>
         </View>
-        <View style={styles.buttons}>
-          <CustomButton title={'Takip et'} theme={'primary'} />
-          <View
-            style={{
-              flexDirection: 'row',
-              gap: 6,
-              justifyContent: 'space-between',
-            }}>
-            <CustomButton title={'Message'} theme={'outline'} />
-            <CustomButton title={'Subscribe'} theme={'outline'} />
-            <CustomButton title={'Contact'} theme={'outline'} />
-          </View>
-        </View>
       </View>
     </View>
   );
@@ -95,7 +81,6 @@ const styles = StyleSheet.create({
   userProfileData: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-
     alignItems: 'center',
     paddingHorizontal: 12,
   },
@@ -135,8 +120,8 @@ const styles = StyleSheet.create({
     width: 54,
   },
   friendsImage: {
-    width: 26,
-    height: 26,
+    width: 36,
+    height: 36,
     borderRadius: 100,
     borderWidth: 1.5,
     borderColor: colors.WHITE,
@@ -144,11 +129,8 @@ const styles = StyleSheet.create({
   followers: {
     flexDirection: 'row',
     paddingBottom: 10,
-    gap: 12,
   },
-  followersRight: {
-    flexDirection: 'row',
-  },
+  followersRight: {},
   followed: {
     fontSize: 13,
     fontWeight: '400',
@@ -158,8 +140,5 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '700',
     lineHeight: 16,
-  },
-  buttons: {
-    gap: 9,
   },
 });

@@ -12,7 +12,7 @@ export const source =
 
 const ProfileScreen = () => {
   return (
-    <View style={{backgroundColor: colors.WHITE, flex: 1}}>
+    <View>
       <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
       <View style={styles.userProfileData}>
         <Avatar image={source} />
@@ -71,19 +71,7 @@ const ProfileScreen = () => {
             <Text style={styles.boldFollowed}>100 others </Text>
           </View>
         </View>
-        <View style={styles.buttons}>
-          <CustomButton title={'Takip et'} theme={'primary'} />
-          <View
-            style={{
-              flexDirection: 'row',
-              gap: 6,
-              justifyContent: 'space-between',
-            }}>
-            <CustomButton title={'Message'} theme={'outline'} />
-            <CustomButton title={'Subscribe'} theme={'outline'} />
-            <CustomButton title={'Contact'} theme={'outline'} />
-          </View>
-        </View>
+        <CustomButton title={'Takip et'} theme={'primary'} />
       </View>
     </View>
   );
@@ -158,8 +146,5 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: '700',
     lineHeight: 16,
-  },
-  buttons: {
-    gap: 9,
   },
 });

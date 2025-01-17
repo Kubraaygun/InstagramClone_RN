@@ -5,14 +5,13 @@ import Header from '../../components/commons/Header';
 import Avatar from '../../components/Avatar/Avatar';
 import ProfileData from '../../components/ProfileFlow/ProfileData';
 import {colors} from '../../constants/colors';
-import CustomButton from '../../components/CustomButtons/CustomButton';
 
 export const source =
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOPH8IcoWp3KC21raLvC_9Xt4QC9kNusEhg&s';
 
 const ProfileScreen = () => {
   return (
-    <View style={{backgroundColor: colors.WHITE, flex: 1}}>
+    <View>
       <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
       <View style={styles.userProfileData}>
         <Avatar image={source} />
@@ -34,55 +33,39 @@ const ProfileScreen = () => {
           </Text>
           <Text style={styles.link}>Link goes here</Text>
         </View>
-        <View style={styles.followers}>
-          <View style={styles.friends}>
-            <Image source={{uri: source}} style={styles.friendsImage} />
+        <View style={styles.friends}>
+          <Image source={{uri: source}} style={styles.friendsImage} />
 
-            <Image
-              source={{uri: source}}
-              style={[
-                styles.friendsImage,
-                {
-                  position: 'absolute',
-                  left: 13,
-                  zIndex: -1,
-                },
-              ]}
-            />
+          <Image
+            source={{uri: source}}
+            style={[
+              styles.friendsImage,
+              {
+                width: 36,
+                height: 36,
+                borderRadius: 100,
+                borderWidth: 1.5,
+                borderColor: colors.WHITE,
+                position: 'absolute',
+                left: 13,
+                zIndex: -1,
+              },
+            ]}
+          />
 
-            <Image
-              source={{uri: source}}
-              style={[
-                styles.friendsImage,
-                {
-                  position: 'absolute',
-                  left: 26,
-                  zIndex: -2,
-                },
-              ]}
-            />
-          </View>
-
-          <View style={styles.followersRight}>
-            <Text style={styles.followed}>Followed by </Text>
-            <Text style={styles.boldFollowed}>username </Text>
-            <Text style={styles.boldFollowed}>username </Text>
-            <Text style={styles.followed}>and </Text>
-            <Text style={styles.boldFollowed}>100 others </Text>
-          </View>
-        </View>
-        <View style={styles.buttons}>
-          <CustomButton title={'Takip et'} theme={'primary'} />
-          <View
+          <Image
+            source={{uri: source}}
             style={{
-              flexDirection: 'row',
-              gap: 6,
-              justifyContent: 'space-between',
-            }}>
-            <CustomButton title={'Message'} theme={'outline'} />
-            <CustomButton title={'Subscribe'} theme={'outline'} />
-            <CustomButton title={'Contact'} theme={'outline'} />
-          </View>
+              width: 36,
+              height: 36,
+              borderRadius: 100,
+              borderWidth: 1.5,
+              borderColor: colors.WHITE,
+              position: 'absolute',
+              left: 26,
+              zIndex: -2,
+            }}
+          />
         </View>
       </View>
     </View>
@@ -95,7 +78,6 @@ const styles = StyleSheet.create({
   userProfileData: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-
     alignItems: 'center',
     paddingHorizontal: 12,
   },
@@ -128,38 +110,15 @@ const styles = StyleSheet.create({
     padding: 6,
     paddingHorizontal: 12,
     paddingBottom: 10,
-    gap: 12,
   },
   friends: {
     flexDirection: 'row',
-    width: 54,
   },
   friendsImage: {
-    width: 26,
-    height: 26,
+    width: 36,
+    height: 36,
     borderRadius: 100,
     borderWidth: 1.5,
     borderColor: colors.WHITE,
-  },
-  followers: {
-    flexDirection: 'row',
-    paddingBottom: 10,
-    gap: 12,
-  },
-  followersRight: {
-    flexDirection: 'row',
-  },
-  followed: {
-    fontSize: 13,
-    fontWeight: '400',
-    lineHeight: 16,
-  },
-  boldFollowed: {
-    fontSize: 13,
-    fontWeight: '700',
-    lineHeight: 16,
-  },
-  buttons: {
-    gap: 9,
   },
 });

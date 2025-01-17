@@ -73,12 +73,7 @@ const ProfileScreen = () => {
         </View>
         <View style={styles.buttons}>
           <CustomButton title={'Takip et'} theme={'primary'} />
-          <View
-            style={{
-              flexDirection: 'row',
-              gap: 6,
-              justifyContent: 'space-between',
-            }}>
+          <View>
             <CustomButton title={'Message'} theme={'outline'} />
             <CustomButton title={'Subscribe'} theme={'outline'} />
             <CustomButton title={'Contact'} theme={'outline'} />
