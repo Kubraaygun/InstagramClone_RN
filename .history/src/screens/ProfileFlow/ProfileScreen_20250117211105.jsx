@@ -91,8 +91,8 @@ const ProfileScreen = () => {
             <PressableIcon />
           </View>
         </View>
+        <SavedIGStories />
       </View>
-      <SavedIGStories />
     </View>
   );
 };

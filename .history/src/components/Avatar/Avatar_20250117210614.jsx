@@ -10,7 +10,7 @@ const Avatar = ({image, isSaved}) => {
     <View style={styles.avatar}>
       {isSaved ? <StoryRing2 /> : <StoryRing />}
       <Image
-        style={[styles.image, isSaved && styles.isSavedSize]}
+        style={styles.image}
         source={{
           uri: image,
         }}
@@ -31,9 +31,5 @@ const styles = StyleSheet.create({
     height: 75,
     borderRadius: 9999,
     position: 'absolute',
-  },
-  isSavedSize: {
-    width: 55,
-    height: 55,
   },
 });
