@@ -96,11 +96,7 @@ const ProfileScreen = () => {
         </View>
       </View>
       <SavedIGStories />
-      <TabNaviBar
-        tabList={tabList}
-        activeBar={activeTab}
-        setActiveBar={setActiveTab}
-      />
+      <TabNaviBar />
     </View>
   );
 };

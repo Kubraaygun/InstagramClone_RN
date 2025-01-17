@@ -1,5 +1,5 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
-import React, {useState} from 'react';
+import React from 'react';
 import {routes} from '../../constants/routes';
 import Header from '../../components/commons/Header';
 import Avatar from '../../components/Avatar/Avatar';
@@ -13,9 +13,7 @@ import TabNaviBar from '../../components/ProfileFlow/TabNaviBar';
 export const source =
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOPH8IcoWp3KC21raLvC_9Xt4QC9kNusEhg&s';
 
-const tabList = ['post', 'reels', 'user'];
 const ProfileScreen = () => {
-  const [activeTab, setActiveTab] = useState(0);
   return (
     <View style={{flex: 1, backgroundColor: colors.WHITE}}>
       <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
@@ -96,11 +94,7 @@ const ProfileScreen = () => {
         </View>
       </View>
       <SavedIGStories />
-      <TabNaviBar
-        tabList={tabList}
-        activeBar={activeTab}
-        setActiveBar={setActiveTab}
-      />
+      <TabNaviBar />
     </View>
   );
 };

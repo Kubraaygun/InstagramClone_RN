@@ -5,7 +5,7 @@ const TabNaviBar = ({tabList, activeBar, setActiveBar}) => {
   console.log(tabList, activeBar, setActiveBar);
   return (
     <View>
-      {tabList?.map((item, index) => (
+      {tabList.map((item, index) => (
         <TouchableOpacity onPress={() => setActiveBar(index)}>
           <Text>{item}</Text>
         </TouchableOpacity>

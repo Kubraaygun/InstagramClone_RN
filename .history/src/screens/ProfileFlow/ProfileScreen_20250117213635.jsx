@@ -13,7 +13,6 @@ import TabNaviBar from '../../components/ProfileFlow/TabNaviBar';
 export const source =
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZOPH8IcoWp3KC21raLvC_9Xt4QC9kNusEhg&s';
 
-const tabList = ['post', 'reels', 'user'];
 const ProfileScreen = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
@@ -96,11 +95,7 @@ const ProfileScreen = () => {
         </View>
       </View>
       <SavedIGStories />
-      <TabNaviBar
-        tabList={tabList}
-        activeBar={activeTab}
-        setActiveBar={setActiveTab}
-      />
+      <TabNaviBar />
     </View>
   );
 };
