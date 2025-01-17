@@ -13,7 +13,7 @@ export const source =
 
 const ProfileScreen = () => {
   return (
-    <View style={{flex: 1, backgroundColor: colors.WHITE}}>
+    <View>
       <Header screenName={routes.PROFILE_SCREEN} isMyProfile={true} />
       <View style={styles.userProfileData}>
         <Avatar image={source} />
@@ -38,10 +38,7 @@ const ProfileScreen = () => {
 
         <View style={styles.followers}>
           <View style={styles.friends}>
-            <Image
-              source={{uri: source}}
-              style={[styles.friendsImage, {zIndex: 3}]}
-            />
+            <Image source={{uri: source}} style={styles.friendsImage} />
 
             <Image
               source={{uri: source}}
@@ -50,7 +47,7 @@ const ProfileScreen = () => {
                 {
                   position: 'absolute',
                   left: 13,
-                  zIndex: 2,
+                  zIndex: -1,
                 },
               ]}
             />
@@ -62,7 +59,7 @@ const ProfileScreen = () => {
                 {
                   position: 'absolute',
                   left: 26,
-                  zIndex: 1,
+                  zIndex: -2,
                 },
               ]}
             />

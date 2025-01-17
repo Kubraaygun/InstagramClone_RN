@@ -8,4 +8,4 @@ export {VerifiedBadge} from './VerifiedBadge';
 export {Notification} from './Notification';
 export {Options} from './Options';
 export {Drawer} from './Drawer';
-export {Frame6} from './Frame6';
+export {Frame6};
